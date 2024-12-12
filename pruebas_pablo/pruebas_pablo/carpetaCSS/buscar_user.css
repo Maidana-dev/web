@@ -1,0 +1,91 @@
+.busqueda {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.busqueda__tabla{
+    text-align: center;
+
+}
+
+.boton_salir{
+    text-align: center;
+    display: inline-block;
+    text-decoration: none;
+    padding: 10px 20px;
+    background-color: rgb(107, 226, 135);
+    color: white;
+    border-radius: 100px;
+}
+
+.boton_salir:hover{
+    background-color: rgb(82, 177, 117);
+}
+
+table {
+    border-collapse: collapse; /* Opcional: mejora la apariencia de la tabla */
+} 
+     
+table, th, td {
+    border: 1px solid rgb(126, 121, 121); /* Opcional: define los bordes de la tabla */ 
+} 
+th, td { 
+    padding: 10px; /* Opcional: añade padding a las celdas de la tabla */ 
+    text-align: center; /* Opcional: centra el texto dentro de las celdas de la tabla */
+}
+
+.buscador{
+    text-align:center;  
+}
+
+.buscador__busqueda{
+    border-collapse: collapse;
+    border: 1px solid black;
+    border-radius: 100px;
+    padding: 5px 10px;
+    color: black;
+}
+
+.buscador__busqueda:hover{
+    box-shadow: 0 0 10px rgb(114, 202, 195);
+}
+
+.boton{
+    border-radius: 50px;
+    background-color: rgb(107, 226, 135);
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+}
+
+.boton:hover{
+    background-color: rgb(82, 177, 117);;
+}
+
+#fondo{
+    background-image: url(../imagenes/imagen2.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    
+}
+
+* {
+    color: beige;
+}
+
+button{
+    background-color: rgb(90, 88, 88);
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+
+button:hover{
+    cursor: pointer;
+}

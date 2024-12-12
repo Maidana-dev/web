@@ -1,0 +1,56 @@
+<?php
+session_start();
+
+
+
+$timeout_duracion = 1800;
+
+if(isset($_SESSION['last_activity']) && (time() - $_SESSION['last_activity']) > $timeout_duracion) {
+	
+	header('Location: cerrar_sesion.php');
+	exit();
+}
+
+$_SESSION['last_activity'] = time();
+
+if(!isset($_SESSION['username'])){
+	header('Location: inicio_de_sesion.php');
+	exit();
+}
+
+
+?>
+
+
+<!DOCTYPE html>
+<html lang = "es">
+	<head>
+		<title>Pagina CRUD</title>
+		<link rel="stylesheet" type="text/css" href="carpetaCSS/estilo_barra_admin.css">
+		
+	</head>
+	<body id="principal">
+		
+			<div class="container">
+				<h1 class="form__h1">Pagina Viv</h1>
+			</div>
+			
+			<div class="form glass-effect">
+				<a href="pagina_busqueda.php" class="form__a">Buscar Empleado</a>
+				<a href="buscar_usuario.php" class="form__a">Buscar Usuario</a>
+				<?php
+				if($_SESSION['rol'] == 'admin'){
+					include_once "barra_admin.php";
+				}	
+				?>
+				<a href="cerrar_sesion.php" class="form__a">Cerrar Sesion</a>
+			</div>
+			<div class="empleados">
+				<?php
+					include_once "registros.php";
+				?>
+				
+			</div>
+		
+	
+</html>

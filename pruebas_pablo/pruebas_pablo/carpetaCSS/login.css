@@ -1,0 +1,83 @@
+h1 {
+    text-align: center;
+    color: #ffffff;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+
+#fondo{
+    background-image: linear-gradient(rgba(5,7,12, 0.75), rgba(5,7,12, 0.75)),
+    url(../imagenes/fondo_inicio_sesion.jpg);
+    background-repeat: no-repeat;
+    background-position: left top;
+    background-size: cover;
+    height: 100vh;
+    margin: 0;
+    font-family:Arial, Helvetica, sans-serif ;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.cuadro{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60%;
+    width: 25%;
+    border: 2px solid #fafafa10;
+    border-radius: 10px;
+}
+
+.glass-efect{
+    background-color: #fafafa10;
+    backdrop-filter: blur(0.5rem);
+    -webkit-backdrop-filter: blur(0.5rem);
+}
+
+
+.cuadro h2{
+    color:#ffffff;
+    text-align: center;
+    display: block;
+    margin-bottom: 20px;
+}
+
+.cuadro label{
+    color: #f9e6e6;
+    display: block;
+    margin-bottom: 20px;
+}
+
+.cuadro input{
+    width: 93%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #7adad0;
+    border-radius: 3px;
+    box-shadow: 0 0 10px #26cbbb;
+}
+
+.cuadro button{
+    width: 100%;
+    padding:  10px;
+    background-color:#41b256;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.cuadro button:hover{
+    background-color: #179f30;
+}
+
+a{
+    color: #ffffff;
+    
+}
+
+a:hover{
+    color: #3ec853;
+}
